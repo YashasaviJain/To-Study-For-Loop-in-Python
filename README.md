@@ -34,61 +34,106 @@ for variable in sequence:
 The loop runs until all items in the sequence are completed.
 
 ---
-
 # * Algorithm
 
-## 1. Print Numbers from 1 to 5
-1. Start  
-2. Use a for loop from 1 to 5  
-3. Display each number  
-4. Stop  
+---
 
-## 2. Sum of First N Numbers
-1. Start  
-2. Take input from user  
-3. Initialize total as 0  
-4. Run loop from 1 to n  
-5. Add each number to total  
-6. Display the sum  
-7. Stop  
+## 1️⃣ Print Numbers from 1 to 5
 
-## 3. 3×3 Matrix Display
-1. Start  
-2. Store matrix values  
-3. Use nested loops  
-4. Print elements row by row  
-5. Stop  
+* Start  
+* Initialize loop variable `i`  
+* Use `range(1,6)` to generate numbers from 1 to 5  
+* For each value of `i`, execute the loop  
+* Print the value of `i`  
+* Repeat until the loop ends  
+* Stop  
 
-## 4. Multiplication of Two 3×3 Matrices
-1. Start  
-2. Initialize two matrices  
-3. Create result matrix with zero values  
-4. Use three nested loops  
-5. Multiply and add elements  
-6. Display result matrix  
-7. Stop  
+---
 
-## 5. Print All Possible Combinations of Three Digits
-1. Start  
-2. Store three digits  
-3. Use three nested loops  
-4. Check digits are not repeated  
-5. Print all valid combinations  
-6. Stop  
+## 2️⃣ Sum of First N Numbers
 
-## 6. Right Angle Triangle Pattern
-1. Start  
-2. Use loop in reverse order  
-3. Print stars in each row  
-4. Stop  
+* Start  
+* Declare variable `n`  
+* Take input from the user and store in `n`  
+* Initialize variable `total = 0`  
+* Use loop from 1 to `n` (using `range(1, n+1)`)  
+* Add each value of `i` to `total`  
+* Repeat until loop completes  
+* Display the final value of `total`  
+* Stop  
 
-## 7. Pyramid Pattern
-1. Start  
-2. Set number of rows  
-3. Use loop to print spaces and stars  
-4. Stop  
+---
 
+## 3️⃣ 3×3 Matrix Display
 
+* Start  
+* Initialize a 3×3 matrix with values  
+* Use outer loop for rows (0 to 2)  
+* Use inner loop for columns (0 to 2)  
+* Access each element using `a[i][j]`  
+* Print each element with space  
+* After each row, move to next line  
+* Repeat until all rows are printed  
+* Stop  
+
+---
+
+## 4️⃣ Multiplication of Two 3×3 Matrices
+
+* Start  
+* Initialize first matrix `a`  
+* Initialize second matrix `b`  
+* Create result matrix with all elements as 0  
+* Use outer loop for rows of matrix `a`  
+* Use second loop for columns of matrix `b`  
+* Initialize sum for each position  
+* Use third loop to multiply corresponding elements  
+* Add multiplication result to `result[i][j]`  
+* Repeat until all rows and columns are completed  
+* Display the final result matrix  
+* Stop  
+
+---
+
+## 5️⃣ Print All Possible Combinations of Three Digits
+
+* Start  
+* Initialize three digits  
+* Store digits inside a list  
+* Use first loop for first digit position  
+* Use second loop for second digit position  
+* Use third loop for third digit position  
+* Check condition that digits are not repeated  
+* If condition is true, print the combination  
+* Repeat until all possibilities are checked  
+* Stop  
+
+---
+
+## 6️⃣ Right Angle Triangle Pattern
+
+* Start  
+* Set the starting value from 5 to 1  
+* Use loop in reverse order (`range(5,0,-1)`)  
+* For each iteration, print stars equal to value of `i`  
+* Move to next line after each row  
+* Repeat until loop ends  
+* Stop  
+
+---
+
+## 7️⃣ Pyramid Pattern
+
+* Start  
+* Initialize number of rows (5)  
+* Use loop from 1 to number of rows  
+* Print spaces equal to `(rows - i)`  
+* Print stars equal to `i`  
+* Move to next line  
+* Repeat until pyramid is complete  
+* Stop  
+
+---
 ---
 
 # * Conclusion
